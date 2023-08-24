@@ -1,0 +1,19 @@
+
+##Clinica de datos
+#Angie Scetta
+
+
+Desafío 1: ESTABLECIMIENTOS COMERCIALES (CABA)
+
+```{r}
+transitabilidadCABA <- read.csv2("data/transitabilidad_miercoles_3c2018.csv", 
+                         stringsAsFactors = TRUE,
+                         encoding="UTF-8")
+```
+
+
+```{r}
+distritoseconomicosCABA <- read.csv("data/distritos-economicos.csv", 
+                         stringsAsFactors = TRUE,
+                         encoding="UTF-8")
+```
