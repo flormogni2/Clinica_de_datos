@@ -5,6 +5,21 @@
 
 Desafío 1: ESTABLECIMIENTOS COMERCIALES (CABA)
 
+
+Desafío 1: ESTABLECIMIENTOS COMERCIALES (CABA)
+
+
+```{r}
+library(readr)
+library(tidyverse)
+```
+
+```{r}
+read_sheet("https://drive.google.com/file/d/1X_-Njv8lgIHv-TqgiJhR6j-6mbuy3xXd/view")
+```
+
+
+
 ```{r}
 transitabilidadCABA <- read.csv2("data/transitabilidad_miercoles_3c2018.csv", 
                          stringsAsFactors = TRUE,
@@ -17,3 +32,27 @@ distritoseconomicosCABA <- read.csv("data/distritos-economicos.csv",
                          stringsAsFactors = TRUE,
                          encoding="UTF-8")
 ```
+
+
+Creo que este no es necesario:
+```{r}
+MercInm_CABA <- read.csv("data/mercado_inmobiliario_DGEyC_argenprop/MI_DVN_procesado.csv", 
+                         stringsAsFactors = TRUE,
+                         encoding="UTF-8")
+```
+
+
+no la pude abrir bien. 
+
+```{r}
+Trazado_calles <- read.csv("data/callejero.csv", 
+                         stringsAsFactors = TRUE,
+                         encoding="UTF-8")
+```
+
+```{r}
+Maestro_emprendim <- read.csv("data/dataset_MEC.csv", 
+                         stringsAsFactors = TRUE,
+                         encoding="UTF-8")
+```
+
